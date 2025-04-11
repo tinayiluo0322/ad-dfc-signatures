@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cat:Catalog ID="UDSd2" xmlns:arc="http://nrg.wustl.edu/arc" xmlns:cat="http://nrg.wustl.edu/catalog" xmlns:pipe="http://nrg.wustl.edu/pipe" xmlns:prov="http://www.nbirn.net/prov" xmlns:scr="http://nrg.wustl.edu/scr" xmlns:val="http://nrg.wustl.edu/val" xmlns:wrk="http://nrg.wustl.edu/workflow" xmlns:xdat="http://nrg.wustl.edu/security" xmlns:xnat="http://nrg.wustl.edu/xnat" xmlns:xnat_a="http://nrg.wustl.edu/xnat_assessments" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<cat:metaFields>
+	<cat:metaField name="AUDIT">1054478:Tue Jul 19 13:28:25 CDT 2022=Added:1</cat:metaField>
+</cat:metaFields>
+<cat:entries>
+	<cat:entry URI="OASIS3_UDSd2_med_conditions.csv" createdBy="oasisAdmin" createdEventId="1054478" createdTime="2022-07-19T13:28:25.589" digest="13cf656c7e8432cfb451be0dd96725a2" format="csv" name="OASIS3_UDSd2_med_conditions.csv">
+		<cat:tags>
+			<cat:tag>oasis3</cat:tag>
+		</cat:tags>
+	</cat:entry>
+</cat:entries>
+</cat:Catalog>
