@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<cat:Catalog ID="PUP" xmlns:arc="http://nrg.wustl.edu/arc" xmlns:cat="http://nrg.wustl.edu/catalog" xmlns:pipe="http://nrg.wustl.edu/pipe" xmlns:prov="http://www.nbirn.net/prov" xmlns:scr="http://nrg.wustl.edu/scr" xmlns:val="http://nrg.wustl.edu/val" xmlns:wrk="http://nrg.wustl.edu/workflow" xmlns:xdat="http://nrg.wustl.edu/security" xmlns:xnat="http://nrg.wustl.edu/xnat" xmlns:xnat_a="http://nrg.wustl.edu/xnat_assessments" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-<cat:metaFields>
-	<cat:metaField name="AUDIT">1108576:Fri Oct 06 10:06:18 CDT 2023=Added:1</cat:metaField>
-</cat:metaFields>
-<cat:entries>
-	<cat:entry ID="PUP/OASIS3_PUP.csv" URI="OASIS3_PUP.csv" createdBy="oasisAdmin" createdEventId="1108576" createdTime="2023-10-06T10:06:18.432" digest="3efdb47946d3fafb750bdac6d52134f0" name="OASIS3_PUP.csv"/>
-</cat:entries>
-</cat:Catalog>
