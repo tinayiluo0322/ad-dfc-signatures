@@ -17,7 +17,8 @@ Key Functions:
   - 1-homology Wasserstein
 
 Note:
-This script executes multiple dataset trials with 5 different random seeds and 50,000 permutations each to ensure stability and reproducibility of p-values.
+This script performs five independent trials per dataset using different random seeds, 
+with 50,000 permutations each, to ensure statistical robustness and reproducibility.
 """
 
 import pandas as pd
