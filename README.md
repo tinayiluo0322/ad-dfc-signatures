@@ -18,36 +18,60 @@ The repository includes:
 ## Folder Structure
 
 ```
-├── preprocessing/            # fMRI data cleaning and formatting
-├── connectivity_pipeline/    # Pearson correlation and sliding-window dFC
-├── distance_metrics/         # Distance computation (e.g., Wasserstein, Spectral)
-├── topology_analysis/        # Persistent graph homology and feature extraction
-├── permutation_test/         # Group-level statistical testing pipeline
-├── utils/                    # Helper functions and configurations
-├── main.py                   # Entry script to run the pipeline
-├── requirements.txt          # Dependencies
+├── Data-Preprocessing/
+│   ├── fmriprep_simg.sh             # Runs fMRIPrep using Singularity
+│   ├── generate_conn_matrices.py   # Generates connectivity matrices from preprocessed data
+│   └── process_raw.sh              # Processes raw BIDS-formatted data
+│
+├── ConnectivityPipeline/
+│   ├── extract_distance.py         # Computes distance metrics (e.g., Wasserstein, spectral)
+│   └── Process_sliding_window.py   # Implements sliding-window dFC computation
+│
+├── PermutationTest/
+│   ├── oasis_5peak_permutation.py  # Permutation test using peak-based features
+│   └── oasis_mean_permutation.py   # Permutation test using mean-based features
+
 ```
 
 ## Requirements
 
-* Python 3.8+
-* numpy, scipy, scikit-learn, gudhi, ripser, matplotlib, nibabel, nilearn
+This project relies on a combination of Python packages and neuroimaging tools for preprocessing, connectivity analysis, and statistical testing. It also includes SLURM job scripts for HPC environments.
 
-Install dependencies:
+### Python Packages
+
+To install the core dependencies, run:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Usage
+Or manually install the following:
 
-To run the full pipeline:
+* `numpy`
+* `pandas`
+* `matplotlib`
+* `seaborn`
+* `scipy`
+* `scikit-learn`
+* `tqdm`
+* `nibabel`
+* `nilearn`
+* `networkx`
 
-```bash
-python main.py --config config.yaml
-```
+> **Note:** Some functions also use `google.colab` (for Google Drive mounting) if running on Colab notebooks.
 
-Modify the config file to specify paths and analysis options.
+### Optional / Environment-Specific
+
+* `fMRIPrep` (required for anatomical preprocessing)
+* Install via Singularity or Docker depending on system
+* SLURM workload manager (for HPC job scheduling)
+* `bash` and job scripts using `SBATCH` directives for parallel processing
+
+### System Requirements
+
+* Python 3.8+
+* At least 16–32 GB RAM recommended for full pipeline execution
+* Access to BIDS-formatted fMRI data for preprocessing
 
 ## Citation
 
