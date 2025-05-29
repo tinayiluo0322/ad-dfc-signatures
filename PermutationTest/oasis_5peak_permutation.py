@@ -13,7 +13,8 @@ Key Functions:
   - Manhattan
   - Chebyshev
   - Frobenius
-  - Wasserstein (0-homology: birth, 1-homology: death)
+  - 0-homology Wasserstein
+  - 1-homology Wasserstein
 
 Note:
 This script executes multiple dataset trials with 5 different random seeds and 50,000 permutations each to ensure stability and reproducibility of p-values.
