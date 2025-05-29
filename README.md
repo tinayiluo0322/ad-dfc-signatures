@@ -2,50 +2,51 @@
 
 This repository contains the code accompanying the paper:
 
-**"Topological and Geometric Signatures of Dynamic Functional Connectivity in Alzheimer’s Disease: A Permutation-Based Framework"**
+***Topological and Geometric Signatures of Dynamic Functional Connectivity in Alzheimer’s Disease: A Permutation-Based Framework***
 
 ## Overview
 
-This work proposes a novel permutation-based framework to identify topological and geometric biomarkers of Alzheimer’s disease (AD) using dynamic functional connectivity (dFC) derived from resting-state fMRI data.
+This work presents a novel permutation-based framework to identify topological and geometric biomarkers of Alzheimer’s disease (AD) using dynamic functional connectivity (dFC) derived from resting-state fMRI data.
 
 The repository includes:
 
 * ✅ **Data Preprocessing**
 * ✅ **Dynamic Connectivity Matrix Construction**
 * ✅ **Distance-Based Time Series Generation**
-* ✅ **Permutation Testing Across Diagnostic Groups And Sexes**
+* ✅ **Permutation Testing Across Diagnostic Groups and Sexes**
 
 ## Folder Structure
 
 ```
 ├── Data-Preprocessing/
 │   ├── fmriprep_simg.sh             # Runs fMRIPrep using Singularity
-│   ├── generate_conn_matrices.py   # Generates connectivity matrices from preprocessed data
-│   └── process_raw.sh              # Processes raw BIDS-formatted data
+│   ├── generate_conn_matrices.py    # Generates connectivity matrices from preprocessed data
+│   └── process_raw.sh               # Processes raw BIDS-formatted data
 │
 ├── ConnectivityPipeline/
-│   ├── extract_distance.py         # Computes distance metrics (e.g., Wasserstein, spectral)
-│   └── Process_sliding_window.py   # Implements sliding-window dFC computation
+│   ├── extract_distance.py          # Computes distance metrics (e.g., Wasserstein, spectral)
+│   └── Process_sliding_window.py    # Implements sliding-window dFC computation
 │
 ├── PermutationTest/
-│   ├── oasis_5peak_permutation.py  # Permutation test using peak-based features
-│   └── oasis_mean_permutation.py   # Permutation test using mean-based features
-
+│   ├── oasis_5peak_permutation.py   # Permutation test using 5-peak-based features
+│   └── oasis_mean_permutation.py    # Permutation test using mean-based features
+│
+├── requirements.txt                 # Python dependencies
 ```
 
 ## Requirements
 
-This project relies on a combination of Python packages and neuroimaging tools for preprocessing, connectivity analysis, and statistical testing. It also includes SLURM job scripts for HPC environments.
+This project relies on a combination of Python packages and neuroimaging tools for preprocessing, connectivity analysis, and statistical testing. SLURM job scripts are included for HPC environments.
 
 ### Python Packages
 
-To install the core dependencies, run:
+To install all core dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Or manually install the following:
+Or install them individually:
 
 * `numpy`
 * `pandas`
@@ -58,27 +59,29 @@ Or manually install the following:
 * `nilearn`
 * `networkx`
 
-> **Note:** Some functions also use `google.colab` (for Google Drive mounting) if running on Colab notebooks.
+> **Note:** Some scripts also use `google.colab` for mounting Google Drive.
 
-### Optional / Environment-Specific
+### Optional / Environment-Specific Tools
 
 * `fMRIPrep` (required for anatomical preprocessing)
-* Install via Singularity or Docker depending on system
-* SLURM workload manager (for HPC job scheduling)
-* `bash` and job scripts using `SBATCH` directives for parallel processing
+* Install via **Singularity** or **Docker**
+* `SLURM` workload manager (for HPC job scheduling)
+* Shell (`bash`) and `SBATCH` scripts for parallel job submission
 
 ### System Requirements
 
 * Python 3.8+
-* At least 16–32 GB RAM recommended for full pipeline execution
-* Access to BIDS-formatted fMRI data for preprocessing
+* 16–32 GB RAM recommended for full pipeline execution
+* Access to BIDS-formatted resting-state fMRI data
 
 ## Citation
 
 If you use this code, please cite:
 
-> Yi, L., Tan, K., & Lutz, A. (2025). *Topological and Geometric Signatures of Dynamic Functional Connectivity in Alzheimer’s Disease: A Permutation-Based Framework*. \[Journal submission in progress]
+> **Luopeiwen Yi**, **Michael William Lutz**\*, **Yutong Wu**, **Yang Li**, and **Tananun Songdechakraiwut**\* (2025).
+> *Topological and Geometric Signatures of Dynamic Functional Connectivity in Alzheimer’s Disease: A Permutation-Based Framework*.
+> \[Journal submission in progress]
 
 ## License
 
-MIT License
+This project is licensed under the **MIT License**.
