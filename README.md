@@ -1,8 +1,8 @@
-# Topological and geometric signatures of brain network dynamics in Alzheimer’s Disease
+# Topological and geometric signatures of brain network dynamics in Alzheimer’s disease
 
 This repository contains the code accompanying the paper:
 
-***Topological and geometric signatures of brain network dynamics in Alzheimer’s Disease***
+***Topological and geometric signatures of brain network dynamics in Alzheimer’s disease***
 
 ## Overview
 
@@ -79,7 +79,7 @@ Or install them individually:
 If you use this code, please cite:
 
 > **Luopeiwen Yi**, **Michael William Lutz**\*, **Yutong Wu**, **Yang Li**, and **Tananun Songdechakraiwut**\* (2025).
-> *Topological and geometric signatures of brain network dynamics in Alzheimer’s Disease*.
+> *Topological and geometric signatures of brain network dynamics in Alzheimer’s disease*.
 > \[Journal submission in progress]
 
 ## License
