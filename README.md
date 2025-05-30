@@ -1,4 +1,4 @@
-# Topological and Geometric Signatures of Dynamic Functional Connectivity in Alzheimer’s Disease
+# Topological and geometric signatures of brain network dynamics in Alzheimer’s Disease
 
 This repository contains the code accompanying the paper:
 
