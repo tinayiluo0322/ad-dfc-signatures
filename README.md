@@ -2,7 +2,7 @@
 
 This repository contains the code accompanying the paper:
 
-***Topological and Geometric Signatures of Dynamic Functional Connectivity in Alzheimer’s Disease: A Permutation-Based Framework***
+***Topological and geometric signatures of brain network dynamics in Alzheimer’s Disease***
 
 ## Overview
 
@@ -79,7 +79,7 @@ Or install them individually:
 If you use this code, please cite:
 
 > **Luopeiwen Yi**, **Michael William Lutz**\*, **Yutong Wu**, **Yang Li**, and **Tananun Songdechakraiwut**\* (2025).
-> *Topological and Geometric Signatures of Dynamic Functional Connectivity in Alzheimer’s Disease: A Permutation-Based Framework*.
+> *Topological and geometric signatures of brain network dynamics in Alzheimer’s Disease*.
 > \[Journal submission in progress]
 
 ## License
