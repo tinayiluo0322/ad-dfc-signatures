@@ -78,9 +78,20 @@ Or install them individually:
 
 If you use this code, please cite:
 
-> **Luopeiwen Yi**, **Michael William Lutz**\*, **Yutong Wu**, **Yang Li**, and **Tananun Songdechakraiwut**\* (2025).
-> *Topological and geometric signatures of brain network dynamics in Alzheimer’s disease*.
-> \[Journal submission in progress]
+```
+@article{yi2025topological,
+  title={Topological and geometric signatures of brain network dynamics in {A}lzheimer's disease},
+  author={Yi, Luopeiwen and Lutz, Michael William and Wu, Yutong and Li, Yang and Songdechakraiwut, Tananun},
+  journal={Alzheimer's \& Dementia},
+  volume={21},
+  number={8},
+  pages={e70545},
+  doi = {https://doi.org/10.1002/alz.70545},
+  url = {https://alz-journals.onlinelibrary.wiley.com/doi/abs/10.1002/alz.70545},
+  eprint = {https://alz-journals.onlinelibrary.wiley.com/doi/pdf/10.1002/alz.70545},
+  year={2025}
+}
+```
 
 ## License
 
