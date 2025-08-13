@@ -1,8 +1,10 @@
-# Topological and geometric signatures of brain network dynamics in Alzheimer’s disease
+# Topological and geometric signatures of brain network dynamics in Alzheimer’s disease (Alzheimer's & Dementia Journal)
 
 This repository contains the code accompanying the paper:
 
-***Topological and geometric signatures of brain network dynamics in Alzheimer’s disease***
+***Topological and geometric signatures of brain network dynamics in Alzheimer’s disease*** 
+
+🔗 Read the full open‐access paper here: https://doi.org/10.1002/alz.70545
 
 ## Overview
 
